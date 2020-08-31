@@ -10,9 +10,14 @@ import UIKit
 
 class FirstVC: UIViewController {
     
+    override func loadView() {
+        super.loadView()
+        printMessage()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        printMessage()
         // Do any additional setup after loading the view.
     }
     
@@ -30,4 +35,10 @@ class FirstVC: UIViewController {
         
     }
     
+}
+
+extension UIViewController{
+    func printMessage(line: Int = #line, function: String = #function){
+        print("\(title ?? "title is nil"): \(function) on the line \(line)")
+    }
 }
