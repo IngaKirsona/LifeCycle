@@ -10,10 +10,17 @@ import UIKit
 
 class SecondVC: UIViewController {
 
+    var someProperty: String!{
+        didSet{
+            print(someProperty ?? "nothing here")
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        if someProperty != nil{
+            print(someProperty ?? "nothing here")
+        }
     }
     
 
