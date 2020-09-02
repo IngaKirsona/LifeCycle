@@ -81,6 +81,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kQS-h6-3hj">
                                 <rect key="frame" x="175.5" y="406" width="63" height="30"/>
                                 <state key="normal" title="Close VC"/>
+                                <connections>
+                                    <action selector="closeButtonTapped:" destination="4Bn-1z-PmN" eventType="touchUpInside" id="ItM-Gc-z0g"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -93,6 +96,7 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lTq-pQ-Olg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="4Bn-1z-PmN" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2583" y="119"/>
         </scene>
