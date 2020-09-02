@@ -10,15 +10,15 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
-//App download completed, can setup basic staff for app - dark mode, colours, etc.
+    
+    
+    //App download completed, can setup basic staff for app - dark mode, colours, etc.
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         print(#function)
         return true
     }
-
+    
     //called before going to background
     func applicationWillResignActive(_ application: UIApplication) {
         print(#function)

@@ -10,7 +10,7 @@
 import UIKit
 
 class SecondVC: UIViewController {
-
+    
     var someProperty: String!{
         didSet{
             print(someProperty ?? "nothing here")
@@ -35,7 +35,7 @@ class SecondVC: UIViewController {
     override func viewWillLayoutSubviews() {
         printMessage()
     }
-
+    
     //After the View size has changed to fit the screen size
     override func viewDidLayoutSubviews() {
         printMessage()
@@ -46,11 +46,11 @@ class SecondVC: UIViewController {
         super.viewDidAppear(animated)
         printMessage()
     }
-        
+    
     //Unloadingg View
-        deinit {
-            printMessage()
-        }
+    deinit {
+        printMessage()
+    }
     
     //Fires when you rotate the screen
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
@@ -72,5 +72,5 @@ class SecondVC: UIViewController {
     
     
     
-    }
+}
 

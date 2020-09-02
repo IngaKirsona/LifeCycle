@@ -9,7 +9,7 @@
 import UIKit
 
 class ThirdVC: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         printMessage()
@@ -24,5 +24,5 @@ class ThirdVC: UIViewController {
         printMessage()
     }
     
-
+    
 }
