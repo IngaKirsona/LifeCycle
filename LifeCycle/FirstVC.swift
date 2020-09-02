@@ -30,7 +30,7 @@ class FirstVC: UIViewController {
             // Get the new view controller using segue.destination.
             let destinationVC = segue.destination as! SecondVC
             // Pass the selected object to the new view controller.
-            destinationVC.someProperty = "This is a property"
+            destinationVC.someProperty = "This is a property!"
         }
         
     }
